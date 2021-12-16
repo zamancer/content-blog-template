@@ -14,6 +14,10 @@ The project is primarily an exercise to onboard new developers in the Intercom's
 2. Clone the base repository found here into your new GitHub account.
 3. Add your leader and teammates as contributors for your new GitHub repository.
 4. Configure your repository such that new PRs require at least an approval before merging.
+ Go to your repository Settings > Branches and configure like so:
+
+<img src="./public/screenshots/protect-branch.png" alt="Example: Configure branch protection." />
+
 5. Generate a new Contentful account using your Globant's email. You should have an empty space once you're done.
 
 ## Getting Started
@@ -28,7 +32,9 @@ The project is primarily an exercise to onboard new developers in the Intercom's
 
 ## Deploy on Netlify
 
-WIP
+Click here to set the app to be instantly deployed to Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zamancer/content-blog-template&utm_source=github)
 
 ## Workflow
 
