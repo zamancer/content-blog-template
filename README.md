@@ -12,13 +12,24 @@ The project is primarily an exercise to onboard new developers in the Intercom's
 
 1. Generate a new GitHub account using your Globant's email.
 2. Clone the base repository found here into your new GitHub account.
-3. Add your leader and teammates as contributors for your new GitHub repository.
+3. Add your leader and teammates as collaborators for your new GitHub repository.
+
+ Go to your repository Settings > Manage access and configure like so:
+
+<img src="./public/screenshots/add-collaborators.png" alt="Example: Add teammates as collaborators." />
+
 4. Configure your repository such that new PRs require at least an approval before merging.
+
  Go to your repository Settings > Branches and configure like so:
 
 <img src="./public/screenshots/protect-branch.png" alt="Example: Configure branch protection." />
 
-5. Generate a new Contentful account using your Globant's email. You should have an empty space once you're done.
+5. Configure your Personal Access Token for the Github Actions. Go to the [Tokens page](https://github.com/settings/tokens) and click on "Generate new Token". Enable all "repo" & "workflow" scopes. 
+Copy the code. Create a new secret in your repository and paste the token as seen in the following screenshot:
+
+<img src="./public/screenshots/create-repo-secret.png" alt="Example: Add a secret in your repository." />
+
+6. Generate a new Contentful account using your Globant's email. You should have an empty space once you're done.
 
 ## Getting Started
 
