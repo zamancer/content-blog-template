@@ -32,9 +32,15 @@ The project is primarily an exercise to onboard new developers in the Intercom's
 
 ## Deploy on Netlify
 
-Click here to set the app to be instantly deployed to Netlify.
+**Option one:** One-click deploy
+
+:exclamation: Please note you need to edit this button and pass the corresponding repository parameter to match your GitHub repo. E.g. `?repository=https://github.com/username/myrepo`
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zamancer/content-blog-template&utm_source=github)
+
+**Option two:** Manual connection
+
+ Connect to [Netlify](https://netlify.com/) by logging in using GitHub auth and then select your repository. The `netlify.toml` file should be ready to be picked up by the Netlify dashboard. Modify it otherwise.
 
 ## Workflow
 
