@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This app is a cloned version of [Contentful's blog](https://contentful.com/blog).
+
+The project is primarily an exercise to onboard new developers in the Intercom's account for Globant.
+
+## Goals
+* Get familiarity with React, TypeScript, NextJS & Contentful.
+* Adopt the component design skills used in our applications (following the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) recommendations).
+* Adopt the workflow used to develop our applications.
+* Identify areas where you need to improve upon or catch up with other team members.
+
+## Prerequisites
+
+1. Generate a new GitHub account using your Globant's email.
+2. Clone the base repository found here into your new GitHub account.
+3. Add your leader and teammates as contributors for your new GitHub repository.
+4. Configure your repository such that new PRs require at least an approval before merging.
+5. Generate a new Contentful account using your Globant's email. You should have an empty space once you're done.
 
 ## Getting Started
 
-First, run the development server:
+> You should use this guide on top of the standard create-next-app [getting started guide](https://nextjs.org/docs/getting-started)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. After cloning this project, install all dependencies using *Yarn* with this command `yarn install`. 
+2. Create a new file called `.env` and copy&paste all the contents found in the file `.env.example`.
+3. Enter your Contentful space and copy the secrets X and Y to the `.env` file.
+4. Start the app with the command `yarn dev` and then open [http://localhost:3000](http://localhost:3000) with your browser. You should see the standard *create-next-app* homepage.
+5. If you don't see the homepage or get an error, please check the Prerequisites section and confirm there's no console errors in your terminal.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy on Netlify
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+WIP
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Workflow
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+* As you start your journey through this exercise, you should be handed a list of user stories to breakdown the work needed for this application. Typically, it comes as a PDF export.
+* Read carefully the instructions on all the stories before starting your work. The full list of tasks tells you the whole story of the expected result once you complete every single item.
+* Once you start working on a user story, create a new branch for such task. Feel free to use any convention you are comfortable with, but please relate your work to the number of JIRA ticket. E.g. `feat/glb-123-my-feature`
+* Once you are ready to submit your work, submit a PR to your own repository. Every user story or task should represent at least one pull request in your repo. Please fill in the details following the Pull Request template.
+* Every PR should trigger an automated lint check as well as a new Netlify preview deployment. Share both the PR and the Preview link with the team to get feedback.
+* Once the PR is approved, merge your work before continuing with other tasks.
 
-## Learn More
+## How to create components
 
-To learn more about Next.js, take a look at the following resources:
+* Create new components in the `src/components` folder. 
+* For each new component, add a new directory. E.g. `src/component/MyComponent`.
+* Inside a component directory, create an `index.ts` file. Such file should contain an exported interface named `IProps`. This interface represents the props for your component.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To write styles, you can use either [component-level CSS](https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css) or [CSS-in-JS](https://nextjs.org/docs/basic-features/built-in-css-support#css-in-js) with the latter being the preferred approach for the main Intercom application.
 
-## Deploy on Vercel
+## Got any questions?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please contact the Intercom team through slack in #ic-core-team. The team is used to have technical conversations through code and pull requests. We encourage you to ask through code examples or submit a new Pull Request to your repository and share it with the team for feedback!
