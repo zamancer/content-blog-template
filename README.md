@@ -11,7 +11,7 @@ The project is primarily an exercise to onboard new developers in the Intercom's
 ## Prerequisites
 
 1. Generate a new GitHub account using your Globant's email.
-2. Clone the base repository found here into your new GitHub account.
+2. Clone the base repository found here into your new GitHub account. Alternatively, use the [one-click Netlify button](#deploy-to-netlify) below which also clones this project for you.
 3. Add your leader and teammates as collaborators for your new GitHub repository.
 
  Go to your repository Settings > Manage access and configure like so:
@@ -41,11 +41,11 @@ Copy the code. Create a new secret in your repository and paste the token as see
 4. Start the app with the command `yarn dev` and then open [http://localhost:3000](http://localhost:3000) with your browser. You should see the standard *create-next-app* homepage.
 5. If you don't see the homepage or get an error, please check the Prerequisites section and confirm there's no console errors in your terminal.
 
-## Deploy on Netlify
+## Deploy to Netlify
 
 **Option one:** One-click deploy
 
-:exclamation: Please note you need to edit this button and pass the corresponding repository parameter to match your GitHub repo. E.g. `?repository=https://github.com/username/myrepo`
+:exclamation: Please note this action will clone this repository into your own Github account.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zamancer/content-blog-template&utm_source=github)
 
